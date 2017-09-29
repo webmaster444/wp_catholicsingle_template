@@ -20,12 +20,9 @@
       <div class="post-preview grid-33">
         <div class="grid-100">
           <?php if (has_post_thumbnail()){ ?>
-            <div class="featured-image-block" style="background-image: url(<?php the_post_thumbnail_url('large') ?>);">
-              <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
-            </div>
-          <?php } else { ?>
-            <h1 class="entry-title"><?php the_title(); ?></h1>
+            <img src="<?php the_post_thumbnail_url('large');?>" width="100%" />
           <?php } ?>
+          <h1 class="entry-title"><?php the_title(); ?></h1>          
         </div>
         <span class="bio-photo" style="margin-right:10px;"><?php echo get_the_date('F j, Y'); ?> </span>
         <span class="cblack">by <?php echo get_author_name(); ?></span>
@@ -33,8 +30,8 @@
         <p class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></p>
       </div>
     <?php endwhile; endif; ?>
-    <div class="nav-previous alignleft"><?php previous_posts_link( '&laquo; Newer posts' ); ?></div>
-    <div class="nav-next alignright"><?php next_posts_link( 'Older posts &raquo;' ); ?></div>
+    <div class="nav-previous alignleft"><?php previous_posts_link( 'Previous' ); ?></div>
+    <div class="nav-next alignright"><?php next_posts_link( 'Next' ); ?></div>
   </div>
 </div>
 <?php get_sidebar(); ?>
