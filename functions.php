@@ -17,17 +17,12 @@ function catholicsingles_setup()
   register_nav_menus(
     array( 'footer-menu-2' => __( 'Footer Menu Line 2', 'catholicsingles' ) )
   );
-  register_nav_menus(
-    array( 'footer-menu-3' => __( 'Footer Menu Line 3', 'catholicsingles' ) )
-  );
-  register_nav_menus(
-    array( 'footer-menu-4' => __( 'Footer Menu Line 4', 'catholicsingles' ) )
-  );
 }
 add_action( 'wp_enqueue_scripts', 'catholicsingles_load_scripts' );
 function catholicsingles_load_scripts()
 {
   wp_enqueue_style ('mystyle', get_template_directory_uri().'/css/public.css', array());
+  wp_enqueue_style('newstyle', get_template_directory_uri() . '/css/newstyle.css', false, filemtime(get_stylesheet_directory() . '/css/newstyle.css'));
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script( 'cookie', get_template_directory_uri().'/js/js.cookie.js', array());
   wp_enqueue_script( 'utm_cookies', get_template_directory_uri().'/js/utm_cookies.js', array());
@@ -154,3 +149,13 @@ function recent_press_releases_func() {
 }
 
 add_shortcode('recent_press_releases', 'recent_press_releases_func');
+
+function author_excerpt (){                      
+  $word_limit = 50; // Limit the number of words
+  // $more_txt = 'read more about:'; // The read more text
+  $txt_end = '...'; // Display text end 
+  $authorName = get_the_author();
+  $authorUrl = get_author_posts_url( get_the_author_meta('ID'));
+  $authorDescriptionShort = wp_trim_words(strip_tags(get_the_author_meta('description')), $word_limit, $txt_end);
+  return $authorDescriptionShort; 
+}
