@@ -32,9 +32,12 @@
 	font-size: 16px;
 }
 
-.blueborder{
+input.blueborder{
 	padding:10px 20px;
-	border: #cce0ed;
+	border: 1px solid #cce0ed;
+	border-radius: 18px;
+	width: 17px;
+	text-align: center;
 }
 .pull-left{
 	float:left;
@@ -152,4 +155,8 @@ img.avatar{
 
 .author-section .bio-text{
 	padding-left: 10px;
+}
+
+.pagination_section div{
+	display: inline;
 }

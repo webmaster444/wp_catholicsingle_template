@@ -32,9 +32,11 @@
       </div>
     <?php endwhile; endif; ?>
     <div class="clearfix"> </div>
-    <div class="nav-previous alignleft"><?php previous_posts_link( 'Previous' ); ?></div>
-    <div class="nav-previous alignleft"><input type="text" class="btn blueborder" value="<?php echo $paged; ?>" /> <?php echo " of " .$pagecnt;?></div>
-    <div class="nav-next alignright"><?php next_posts_link( 'Next' ); ?></div>
+    <div class="aligncenter pagination_section">
+      <div class=""><?php previous_posts_link( 'Previous' ); ?></div>
+      <div class=""><input type="text" class="blueborder" value="<?php echo $paged; ?>" /> <?php echo " of " .$pagecnt;?></div>
+      <div class=""><?php next_posts_link( 'Next' ); ?></div>
+    </div>
   </div>
 </div>
 <?php get_sidebar(); ?>
