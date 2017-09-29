@@ -160,3 +160,17 @@ img.avatar{
 .pagination_section div{
 	display: inline;
 }
+
+h1{
+	border: none;
+}
+
+.blog-page-title{
+	font-weight: 800;
+	font-size: 25px;
+	color: black;
+}
+
+h1.entry-title{
+	color: #003c59;
+}

@@ -9,7 +9,7 @@
 
 <div class="grid-container spacer-top">
   <div class="grid-100 tablet-grid-100">
-    <h1 class="entry-title"><?php 
+    <h1 class="blog-page-title"><?php 
     if ( is_day() ) { printf( __( 'Daily Archives: %s', 'catholicsingles' ), get_the_time( get_option( 'date_format' ) ) ); }
     elseif ( is_month() ) { printf( __( 'Monthly Archives: %s', 'catholicsingles' ), get_the_time( 'F Y' ) ); }
     elseif ( is_year() ) { printf( __( 'Yearly Archives: %s', 'catholicsingles' ), get_the_time( 'Y' ) ); }
