@@ -1,0 +1,343 @@
+/* line 1, ../../scss/includes/public_reset.scss */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+/* line 97, ../../scss/includes/public_reset.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 102, ../../scss/includes/public_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 117, ../../scss/includes/public_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 122, ../../scss/includes/public_reset.scss */
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 129, ../../scss/includes/public_reset.scss */
+ul,
+ol {
+  list-style: none;
+}
+
+/* line 134, ../../scss/includes/public_reset.scss */
+li {
+  display: list-item;
+}
+
+/* line 138, ../../scss/includes/public_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 143, ../../scss/includes/public_reset.scss */
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* line 151, ../../scss/includes/public_reset.scss */
+q {
+  quotes: none;
+}
+
+/* line 155, ../../scss/includes/public_reset.scss */
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* line 161, ../../scss/includes/public_reset.scss */
+sub,
+sup,
+small {
+  font-size: 75%;
+}
+
+/* line 167, ../../scss/includes/public_reset.scss */
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 174, ../../scss/includes/public_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 178, ../../scss/includes/public_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 182, ../../scss/includes/public_reset.scss */
+svg {
+  overflow: hidden;
+}
+
+/* line 186, ../../scss/includes/public_reset.scss */
+body {
+  font: 13px / 1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+
+/* line 190, ../../scss/includes/public_reset.scss */
+pre,
+code {
+  font-family: "DejaVu Sans Mono", Monaco, Consolas, monospace;
+}
+
+/* line 195, ../../scss/includes/public_reset.scss */
+hr {
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+/* line 202, ../../scss/includes/public_reset.scss */
+h1 {
+  font-size: 25px;
+}
+
+/* line 206, ../../scss/includes/public_reset.scss */
+h2 {
+  font-size: 23px;
+}
+
+/* line 210, ../../scss/includes/public_reset.scss */
+h3 {
+  font-size: 21px;
+}
+
+/* line 214, ../../scss/includes/public_reset.scss */
+h4 {
+  font-size: 19px;
+}
+
+/* line 218, ../../scss/includes/public_reset.scss */
+h5 {
+  font-size: 17px;
+}
+
+/* line 222, ../../scss/includes/public_reset.scss */
+h6 {
+  font-size: 15px;
+}
+
+/* line 226, ../../scss/includes/public_reset.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 230, ../../scss/includes/public_reset.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 234, ../../scss/includes/public_reset.scss */
+li {
+  margin-left: 30px;
+}
+
+/* line 238, ../../scss/includes/public_reset.scss */
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px;
+}
+
+/* line 257, ../../scss/includes/public_reset.scss */
+body {
+  background: white;
+  color: #333;
+  text-align: center;
+}
+
+/* line 263, ../../scss/includes/public_reset.scss */
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* line 267, ../../scss/includes/public_reset.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 271, ../../scss/includes/public_reset.scss */
+h1 {
+  padding-top: 20px;
+}
+
+/* line 275, ../../scss/includes/public_reset.scss */
+.example-block {
+  background: #eee;
+  font-size: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* line 284, ../../scss/includes/public_reset.scss */
+.grid-container {
+  padding-bottom: 20px;
+}
+
+/* line 288, ../../scss/includes/public_reset.scss */
+.grid-container > hr {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 293, ../../scss/includes/public_reset.scss */
+div[class*="push-"] section {
+  background: #dec;
+}
+
+/* line 297, ../../scss/includes/public_reset.scss */
+div[class*="pull-"] section {
+  background: #fcd;
+}
+
+/* line 301, ../../scss/includes/public_reset.scss */
+.dynamic-px-width {
+  display: block;
+}

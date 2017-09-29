@@ -1,0 +1,13 @@
+@media only screen and (max-width: 40em) {
+  .inline-headers {
+    .header { text-align: left; }
+  }
+
+  .grid-container {
+    iframe {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+}

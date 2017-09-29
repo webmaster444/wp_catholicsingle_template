@@ -1,0 +1,12 @@
+@media only screen and (max-width: 40em) {
+  /* line 3, ../../scss/includes/mobile_overrides.scss */
+  .inline-headers .header {
+    text-align: left;
+  }
+
+  /* line 7, ../../scss/includes/mobile_overrides.scss */
+  .grid-container iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}

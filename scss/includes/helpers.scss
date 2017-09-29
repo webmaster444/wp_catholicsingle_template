@@ -1,0 +1,91 @@
+@mixin appearance($params...) {
+  appearance: $params;
+  -moz-appearance: $params;
+  -webkit-appearance: $params;
+  -ms-appearance: $params;
+  -o-appearance: $params;
+}
+
+@mixin box-shadow($params...) {
+  box-shadow: $params;
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  -ms-box-shadow: $params;
+  -o-box-shadow: $params;
+}
+
+@mixin border-radius($params...) {
+  border-radius: $params;
+  -webkit-border-radius: $params;
+  -moz-border-radius: $params;
+  -ms-border-radius: $params;
+  -o-border-radius: $params;
+}
+
+@mixin text-shadow($params...) {
+  text-shadow: $params;
+  -webkit-text-shadow: $params;
+  -moz-text-shadow: $params;
+  -ms-text-shadow: $params;
+  -o-text-shadow: $params;
+}
+
+@mixin transition($params...) {
+	transition: $params;
+	-webkit-transition: $params;
+	-moz-transition: $params;
+	-ms-transition: $params;
+	-o-transition: $params;
+}
+
+@mixin scale($params...) {
+	transform: scale($params);
+	-webkit-transform: scale($params);
+	-moz-transform: scale($params);
+	-ms-transform: scale($params);
+	-o-transform: scale($params);
+}
+
+@mixin gradient($start, $end) {
+  background: $start;
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, $start), color-stop(1, $end));
+  background-image: -o-linear-gradient(top, $start 0%, $end 100%);
+  background-image: -moz-linear-gradient(top, $start 0%, $end 100%);
+  background-image: -webkit-linear-gradient(top, $start 0%, $end 100%);
+  background-image: -ms-linear-gradient(top, $start 0%, $end 100%);
+  background-image: linear-gradient(to top, $start 0%, $end 100%);
+}
+
+@mixin layered-gradient($image-url, $start, $end) {
+  background: $start;
+  background-image: image-url($image-url);
+  background-image: image-url($image-url), -webkit-gradient( linear, left bottom, left top, color-stop(0, $start), color-stop(1, $end));
+  background-image: image-url($image-url), -o-linear-gradient(top, $start 0%, $end 100%);
+  background-image: image-url($image-url), -moz-linear-gradient(top, $start 0%, $end 100%);
+  background-image: image-url($image-url), -webkit-linear-gradient(top, $start 0%, $end 100%);
+  background-image: image-url($image-url), -ms-linear-gradient(top, $start 0%, $end 100%);
+  background-image: image-url($image-url), linear-gradient(to top, $start 0%, $end 100%);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background: $start image-url($image-url) left center no-repeat \9;
+}
+
+@mixin layered-gradient-left($image-url, $start, $end) {
+  background: $start;
+  background-image: image-url($image-url);
+  background-image: image-url($image-url), -webkit-gradient( linear, left bottom, left top, color-stop(0, $start), color-stop(1, $end));
+  background-image: image-url($image-url), -o-linear-gradient(top, $start 0%, $end 100%);
+  background-image: image-url($image-url), -moz-linear-gradient(top, $start 0%, $end 100%);
+  background-image: image-url($image-url), -webkit-linear-gradient(top, $start 0%, $end 100%);
+  background-image: image-url($image-url), -ms-linear-gradient(top, $start 0%, $end 100%);
+  background-image: image-url($image-url), linear-gradient(to top, $start 0%, $end 100%);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background: $start image-url($image-url) left center no-repeat \9;
+}
+
+@mixin faded() {
+  opacity: 0.3;
+  filter: alpha(opacity = 50);
+  zoom: 1;
+}

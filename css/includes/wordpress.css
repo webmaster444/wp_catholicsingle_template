@@ -1,0 +1,33 @@
+/*
+Sass::SyntaxError: "#comments input[type="submit"]" failed to @extend ".btn".
+The selector ".btn" was not found.
+Use "@extend .btn !optional" if the extend should be able to fail.
+
+
+Backtrace:
+/Applications/MAMP/htdocs/wp-content/themes/catholicsingles/scss/includes/wordpress.scss:157
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/extend.rb:62:in `block in check_extends_fired!'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/util/subset_map.rb:105:in `block in each_value'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/util/subset_map.rb:105:in `each'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/util/subset_map.rb:105:in `each_value'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/extend.rb:16:in `visit'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:39:in `css_tree'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/makaio/.rbenv/versions/2.3.4/lib/ruby/gems/2.3.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: \"#comments input[type=\"submit\"]\" failed to @extend \".btn\".\A The selector \".btn\" was not found.\A Use \"@extend .btn !optional\" if the extend should be able to fail.\A "; }
