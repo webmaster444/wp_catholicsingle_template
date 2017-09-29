@@ -13,38 +13,16 @@
   <div class="header-section-wrapper">
     <div class="grid-container">
       <div class="grid-parent header-wrapper">
-        <div class="logo grid-60 tablet-grid-50 mobile-grid-60" style="text-align: left">
-          <a href="/"><img src="<?php echo get_stylesheet_uri();?>/images/logo.png" alt="Catholic Singles Logo" /></a>
+        <div class="logo pull-left" style="text-align: left">
+          <a href="/" class="logo"><img src="<?php echo get_stylesheet_uri();?>/../images/logo-1.png" alt="Catholic Singles Logo" /></a>
         </div>
 
-        <div class="login grid-40 tablet-grid-50 mobile-grid-40">
-          <div class="hide-on-desktop hide-on-tablet">
-            <div class="join-block">
-              <div class="btn-wrapper"><a href="https://app.catholicsingles.com/cgi-bin/members_secure_signup_1.cgi" class="btn alt4 user">Join</a></div>
-            </div>
-            <div class="login-block">
-              <div class="btn-wrapper"><a href="https://app.catholicsingles.com/login.html" class="btn alt lock">Login</a></div>
-            </div>
-          </div>
-
-          <div class="hide-on-mobile grid-parent">
-            <div class="grid-50 tablet-grid-50 align-right">
-              <div class="join-block">
-                <div>New to CatholicSingles?</div>
-                <div class="btn-wrapper"><a href="https://app.catholicsingles.com/cgi-bin/members_secure_signup_1.cgi" class="btn alt4 user">Join for FREE</a></div>
-              </div>
-            </div>
-            <div class="grid-50 tablet-grid-50 align-left">
-              <div class="login-block">
-                <div>Already a member?</div>
-
-                <div class="btn-wrapper"><a href="https://app.catholicsingles.com/login.html" class="btn alt lock">Log In</a></div>
-              </div>
-            </div>
-          </div>
+        <div class="login pull-right">
+          <span class="hide-on-mobile">Already have an account?</span><a href="https://app.catholicsingles.com/login.html" class="btn btn-primary">Sign In</a>
         </div>
       </div>
     </div>
+    <div class="header-boxshadow"> </div>
   </div>
   <!-- End Header -->
   <?php //wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
