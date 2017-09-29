@@ -22,7 +22,7 @@
 	font-size: 16px;
 }
 
-.btn-btn-filled, .btn-btn-primary:hover{
+.btn.btn-filled, .btn.btn-primary:hover{
 	padding: 10px 40px;
 	border-radius: 32px;
 	background: #ff0054;
@@ -30,6 +30,11 @@
 	border-color: #ff0054;
 	font-weight: 800;
 	font-size: 16px;
+}
+
+.blueborder{
+	padding:10px 20px;
+	border: #cce0ed;
 }
 .pull-left{
 	float:left;

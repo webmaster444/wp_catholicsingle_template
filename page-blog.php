@@ -2,7 +2,9 @@
 
 <?php
   $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-  query_posts( array( 'posts_per_page' => 15, 'post_status' => 'publish', 'paged' => $paged ) );
+  query_posts( array( 'posts_per_page' => 15, 'post_status' => 'publish', 'paged' => $paged ) );  
+  global $wp_query;
+  $pagecnt = $wp_query->max_num_pages;
 ?>
 
 <div class="grid-container spacer-top">
@@ -26,11 +28,12 @@
         </div>
         <span class="bio-photo" style="margin-right:10px;"><?php echo get_the_date('F j, Y'); ?> </span>
         <span class="cblack">by <?php echo get_author_name(); ?></span>
-        <?php the_excerpt(); ?>
-        <p class="read-more"><a href="<?php the_permalink(); ?>">Read More</a></p>
+        <?php the_excerpt(); ?>        
       </div>
     <?php endwhile; endif; ?>
+    <div class="clearfix"> </div>
     <div class="nav-previous alignleft"><?php previous_posts_link( 'Previous' ); ?></div>
+    <div class="nav-previous alignleft"><input type="text" class="btn blueborder" value="<?php echo $paged; ?>" /> <?php echo " of " .$pagecnt;?></div>
     <div class="nav-next alignright"><?php next_posts_link( 'Next' ); ?></div>
   </div>
 </div>
