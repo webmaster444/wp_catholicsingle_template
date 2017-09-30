@@ -1,11 +1,11 @@
 <div class="blog-section-wrapper">
   <div class="grid-container">
-    <h1 class="grid-100">Catholic Singles Dating Blogs</h1>
+    <h1 class="grid-100 section_title">From CatholicSingles.com Blogs</h1>
     <?php
     $blog_query = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 4));    
     while($blog_query->have_posts()) : $blog_query->the_post();      
       ?>
-      <div class="grid-50 post">
+      <div class="grid-25 post">
         <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
         <div class="byline">by <span class="author"><?php the_author(); ?></span> on <span class="date"><?php the_date() ?></span></div>
