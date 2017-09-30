@@ -166,3 +166,9 @@ add_filter('previous_posts_link_attributes', 'posts_link_attributes');
 function posts_link_attributes() {
     return 'class="btn btn-filled"';
 }
+
+function home_recent_success_stories_func() {
+  return render_template("includes/home_recent_success_story.php");
+}
+
+add_shortcode('home_recent_success_stories', 'home_recent_success_stories_func');
