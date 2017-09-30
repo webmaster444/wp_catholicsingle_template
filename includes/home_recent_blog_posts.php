@@ -11,7 +11,7 @@
         <?php } ?>
         <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
-        <div class="byline">by <span class="author"><?php the_author(); ?></span> on <span class="date"><?php the_date() ?></span></div>
+        <div class="byline">by <span class="author"><?php the_author(); ?></span> on <span class="date"><?php echo get_the_date('F j, Y'); ?> </span></div>
 
         <div class="post">
           <p><?php print the_excerpt(); ?>
