@@ -167,10 +167,21 @@ h1{
 
 .blog-page-title{
 	font-weight: 800;
-	font-size: 25px;
-	color: black;
+	font-size: 2.5em;
+	color: #4d4d4d;
+	text-align: center;
 }
 
-h1.entry-title{
-	color: #003c59;
+h1.entry-title a{
+	font-weight: 800;
+	color: #2a7cb5;
+	text-decoration: none;
+}
+
+.post-preview:nth-child(3n+1){
+	clear: both;	
+}
+
+.section_title{
+	color: #004a73;
 }
