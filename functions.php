@@ -172,3 +172,9 @@ function home_recent_success_stories_func() {
 }
 
 add_shortcode('home_recent_success_stories', 'home_recent_success_stories_func');
+
+function home_recent_blog_posts_func() {
+  return render_template("includes/home_recent_blog_posts.php");
+}
+
+add_shortcode('home_recent_blog_posts', 'home_recent_blog_posts_func');
