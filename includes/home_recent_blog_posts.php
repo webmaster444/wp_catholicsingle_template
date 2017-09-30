@@ -2,10 +2,8 @@
   <div class="grid-container">
     <h1 class="grid-100">Catholic Singles Dating Blogs</h1>
     <?php
-    $blog_query = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 2));
-    $counter = 0;
-    while($blog_query->have_posts()) : $blog_query->the_post();
-      $counter++;
+    $blog_query = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 4));    
+    while($blog_query->have_posts()) : $blog_query->the_post();      
       ?>
       <div class="grid-50 post">
         <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
