@@ -10,8 +10,7 @@
 <?php get_header(); ?>
 <section id="homepage" role="main">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<div class="grid-container">
-  <div class="grid-100">
+<div class="grid-100">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php if (false): ?>
       <header class="header">
@@ -28,6 +27,5 @@
     <?php endwhile; endif; ?>
     </section>
   </div>
-</div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
