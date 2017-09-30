@@ -6,6 +6,9 @@
     while($blog_query->have_posts()) : $blog_query->the_post();      
       ?>
       <div class="grid-25 post">
+        <?php if (has_post_thumbnail()){ ?>
+          <img src="<?php the_post_thumbnail_url('large');?>" width="100%" />
+        <?php } ?>
         <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 
         <div class="byline">by <span class="author"><?php the_author(); ?></span> on <span class="date"><?php the_date() ?></span></div>
