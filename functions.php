@@ -178,3 +178,14 @@ function home_recent_blog_posts_func() {
 }
 
 add_shortcode('home_recent_blog_posts', 'home_recent_blog_posts_func');
+
+function home_guest_search_func() {
+  return render_template("includes/home_guest_search.php");
+}
+
+add_shortcode('home_guest_search', home_guest_search_func);
+
+function home_last_relation_func( $bg, $txt ){
+  return render_template("includes/home_last_relation_func.php");  
+}
+add_shortcode( 'home_last_relation', 'home_last_relation_func' );
