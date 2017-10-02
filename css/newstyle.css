@@ -197,10 +197,10 @@ h1.entry-title a{
 
 .form-section-wrapper .form-box{
 	margin-top: 380px;
+	position: relative;
 }
 
-.img-back-wrapper{
-	min-height: 520px;
+.img-back-wrapper,.mobile-app-back{	
 	width: 100vw;
 	position: relative;
 	margin-left: -50vw;	
@@ -208,9 +208,41 @@ h1.entry-title a{
 	left: 50%;
 }
 
-.widget_content{
+.imgback_widget_content{
 	width: 400px;
 	margin: 0 auto;
 	padding-top: 200px;
 	text-align: center;
+	padding-bottom: 100px;
+}
+.imgback_widget_content h1 em{
+	font-style:normal;
+}
+.imgback_widget_content h1{
+	font-size: 2.5em;
+	color: white;
+}
+
+.mobileapp_img_wrapper img{
+	margin-top: -180px;
+}
+
+.mobile-app-back{
+	margin-top: 370px;
+}
+.mobile-app-back .text_content{
+	padding-top: 50px;
+}
+
+.cwhite{
+	color: white;
+}
+
+.form-section-wrapper .form-box h1.tag_line{
+	position: absolute;
+	top: -170px;
+	right: 50px;
+	color: white;
+	font-weight: 800;
+	font-size: 2.5em;
 }
