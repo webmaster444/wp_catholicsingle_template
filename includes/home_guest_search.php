@@ -1,16 +1,15 @@
 <!-- Form Section -->
-
-<div class="form-section-wrapper">
+<div class="form-section-wrapper signup_widget">
   <div class="grid-container">
-    <div class="grid-80 prefix-10 form-box search-box tablet-grid-60 tablet-prefix-40 hide-on-mobile">      
+    <div class="grid-80 prefix-10 form-box search-box tablet-grid-60 tablet-prefix-40 hide-on-mobile">
       <form method="POST" action="https://app.catholicsingles.com/cgi-bin/guest_search.cgi">
         <h1 class="tag_line cwhite"> Find Your Love & Faith </h1>
         <div class='group align-center'>
-          <h1 class="section_title">Get Started! Create A Free Account:</h1>          
-        </div>        
+          <h1 class="section_title">Get Started! Create A Free Account:</h1>
+        </div>
         <div class="group align-center">
           <div class="grid-33 table-grid-33">
-            <input type='text' name='email' placeholder="Email" />
+            <input type='email' name='email' placeholder="Email" />
           </div>
           <div class="grid-33 table-grid-33">
             <input type='password' name='password' placeholder="Password" />
@@ -20,27 +19,67 @@
           </div>
         </div>
         <div class='group align-center'>
-          <div class="grid-33 table-grid-33">
-            <select name="age_min">
+          <div class="grid-40 table-grid-40" id="birthday_wrapper">
+          <label> Birthday </label>
+          <div class="dropdown" id="month_dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Jan
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Jan</a></li>
+              <li><a href="#">Feb</a></li>
+              <li><a href="#">Mar</a></li>
+              <li><a href="#">Apr</a></li>
+              <li><a href="#">Mar</a></li>
+              <li><a href="#">May</a></li>
+              <li><a href="#">Jun</a></li>
+              <li><a href="#">Jul</a></li>              
+              <li><a href="#">Aug</a></li>
+              <li><a href="#">Sep</a></li>
+              <li><a href="#">Oct</a></li>
+              <li><a href="#">Nov</a></li>
+              <li><a href="#">Dec</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown" id="day_dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              1
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <?php foreach(range(1, 31) as $number): ?>
+                <li> <a href="#"><?php print $number ?></a></li>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+
+          <div class="dropdown" id="year_dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              1980
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <?php foreach(range(1980, 2017) as $number): ?>
+                <li> <a href="#"><?php print $number ?></a></li>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+            <!-- <select name="">
               <?php foreach(range(18, 99) as $number): ?>
                 <option value="<?php print $number ?>"><?php print $number ?></option>
               <?php endforeach; ?>
-            </select>
+            </select> -->
           </div>
-          <label class="and"> and </label>
-          <div class="styled-select alt small inline-block">
-            <select name="age_max">
-              <?php foreach(range(18, 99) as $number): ?>
-                <option value="<?php print $number ?>"><?php print $number ?></option>
-              <?php endforeach; ?>
-            </select>
+          
+          <div class="grid-30 table-grid-30">
+          <input type="text" name="username" placeholder="Username" />
           </div>
-        </div>
-        <div class='group align-center'>          
-          <input type="text" name="zip" class="zip" placeholder="Zip Code">
-        </div>
-        <div class='group align-center'>
-          <input type="submit" class="btn alt medium heart" value="Show me some Catholic Singles!">
+
+          <div class="grid-30 table-grid-30">
+          <a href="#next" class="btn btn-filled">Next</a>
+          </div>
         </div>
       </form>
     </div>
