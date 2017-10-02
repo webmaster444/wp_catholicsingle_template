@@ -198,6 +198,7 @@ h1.entry-title a{
 .form-section-wrapper .form-box{
 	margin-top: 380px;
 	position: relative;
+	padding: 40px 10px;
 }
 
 .img-back-wrapper,.mobile-app-back{	
@@ -245,4 +246,28 @@ h1.entry-title a{
 	color: white;
 	font-weight: 800;
 	font-size: 2.5em;
+}
+
+input{
+	box-shadow: none;
+}
+
+.signup_widget input{
+	box-shadow: none;
+	border:none;
+	border-bottom: 2px solid #09547b;
+}
+
+#birthday_wrapper .dropdown{
+	display: inline;
+}
+#birthday_wrapper button.dropdown-toggle{
+	border: none;    
+	background: none;
+	border-bottom: 2px solid #09547b;
+	border-radius: 0;
+}
+
+#birthday_wrapper span.caret{
+	color: #09547b;
 }
