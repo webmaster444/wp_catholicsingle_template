@@ -288,7 +288,7 @@ input{
 	text-align: center;
 }
 
-.post_title{
+.post_title,.post_title:hover{
 	text-decoration: none;
 	color: #23527c;
 }
