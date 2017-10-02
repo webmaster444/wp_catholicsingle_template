@@ -1,18 +1,26 @@
 <!-- Form Section -->
+
 <div class="form-section-wrapper">
   <div class="grid-container">
-    <div class="grid-80 prefix-10 form-box search-box tablet-grid-60 tablet-prefix-40 hide-on-mobile">
+    <div class="grid-80 prefix-10 form-box search-box tablet-grid-60 tablet-prefix-40 hide-on-mobile">      
       <form method="POST" action="https://app.catholicsingles.com/cgi-bin/guest_search.cgi">
+        <h1 class="tag_line cwhite"> Find Your Love & Faith </h1>
         <div class='group align-center'>
-          I am:
-          <label class="gender" for="my_gender"> <input type="radio" name="my_gender" value="M"> Male </label>
-          <label class="gender" for="my_gender"> <input type="radio" name="my_gender" value="F"> Female </label>
+          <h1 class="section_title">Get Started! Create A Free Account:</h1>          
+        </div>        
+        <div class="group align-center">
+          <div class="grid-33 table-grid-33">
+            <input type='text' name='email' placeholder="Email" />
+          </div>
+          <div class="grid-33 table-grid-33">
+            <input type='password' name='password' placeholder="Password" />
+          </div>
+          <div class="grid-33 table-grid-33">
+            <input type="text" name="zip" class="zip" placeholder="Zip Code">
+          </div>
         </div>
         <div class='group align-center'>
-          and would like to meet someone between
-        </div>
-        <div class='group align-center'>
-          <div class="styled-select alt up small inline-block">
+          <div class="grid-33 table-grid-33">
             <select name="age_min">
               <?php foreach(range(18, 99) as $number): ?>
                 <option value="<?php print $number ?>"><?php print $number ?></option>
@@ -28,9 +36,8 @@
             </select>
           </div>
         </div>
-        <div class='group align-center'>
-          My zip code is:
-          <input type="text" name="zip" class="zip">
+        <div class='group align-center'>          
+          <input type="text" name="zip" class="zip" placeholder="Zip Code">
         </div>
         <div class='group align-center'>
           <input type="submit" class="btn alt medium heart" value="Show me some Catholic Singles!">
