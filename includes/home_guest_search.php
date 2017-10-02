@@ -1,12 +1,17 @@
 <!-- Form Section -->
 <div class="form-section-wrapper signup_widget">
   <div class="grid-container">
-    <div class="grid-80 prefix-10 form-box search-box tablet-grid-60 tablet-prefix-40 hide-on-mobile">
+    <div class="grid-90 prefix-5 form-box search-box tablet-grid-60 tablet-prefix-40 hide-on-mobile">
       <form method="POST" action="https://app.catholicsingles.com/cgi-bin/guest_search.cgi">
         <h1 class="tag_line cwhite"> Find Your Love & Faith </h1>
         <div class='group align-center'>
-          <h1 class="section_title">Get Started! Create A Free Account:</h1>
+          <h1 class="section_title  text-center">Get Started! Create A Free Account:</h1>
         </div>
+        <div id="login_btns_section" class="text-center">
+        <a href="#" class="btn btn-fb-img btn-blue"><img src="<?php echo get_template_directory_uri();?>/images/fb256.png" alt="Login with Facebook" width='20px'>Login with Facebook</a>
+        <a href="#" class="btn btn-google-img btn-white" > <img src="<?php echo get_template_directory_uri();?>/images/google256.png" alt="Login with Facebook" width='20px'> Login with Google</a>
+        </div>
+        <h2><span>Or signup via email</span></h2>
         <div class="group align-center">
           <div class="grid-33 table-grid-33">
             <input type='email' name='email' placeholder="Email" />
