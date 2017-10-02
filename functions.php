@@ -24,6 +24,7 @@ function catholicsingles_load_scripts()
   wp_enqueue_style ('mystyle', get_template_directory_uri().'/css/public.css', array());
   wp_enqueue_style('newstyle', get_template_directory_uri() . '/css/newstyle.css', false, filemtime(get_stylesheet_directory() . '/css/newstyle.css'));
   wp_enqueue_script( 'jquery' );
+  wp_enqueue_script( 'bootstrap', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js");
   wp_enqueue_script( 'cookie', get_template_directory_uri().'/js/js.cookie.js', array());
   wp_enqueue_script( 'utm_cookies', get_template_directory_uri().'/js/utm_cookies.js', array());
 }
@@ -189,3 +190,8 @@ function home_last_relation_func( $bg, $txt ){
   return render_template("includes/home_last_relation.php");  
 }
 add_shortcode( 'home_last_relation', 'home_last_relation_func' );
+
+function home_mobile_app_func( $bg, $txt ){
+  return render_template("includes/home_mobile_app.php");  
+}
+add_shortcode( 'home_mobile_app', 'home_mobile_app_func' );
