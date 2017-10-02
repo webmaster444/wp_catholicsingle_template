@@ -287,3 +287,8 @@ input{
 .text-center{
 	text-align: center;
 }
+
+.post_title{
+	text-decoration: none;
+	color: #23527c;
+}
