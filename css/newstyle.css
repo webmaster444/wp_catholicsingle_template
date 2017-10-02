@@ -198,7 +198,7 @@ h1.entry-title a{
 .form-section-wrapper .form-box{
 	margin-top: 380px;
 	position: relative;
-	padding: 40px 10px;
+	padding: 40px 80px;
 }
 
 .img-back-wrapper,.mobile-app-back{	
@@ -270,4 +270,20 @@ input{
 
 #birthday_wrapper span.caret{
 	color: #09547b;
+}
+
+.signup_widget h2 { width:100%; text-align:center; border-bottom: 1px solid #c6e0ec; line-height:0.1em; margin:10px 0 20px; } 
+.signup_widget h2 span { background:#fff; padding:0 10px; }
+
+#login_btns_section a.btn-white{
+	border: 1px solid #aaa;
+	color: #aaa;
+	font-weight: 800;
+	font-size: 16px;
+	border-radius: 32px;
+	padding: 10px 40px;
+}
+
+.text-center{
+	text-align: center;
 }
