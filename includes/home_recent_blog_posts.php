@@ -17,7 +17,7 @@
           <p><?php print the_excerpt(); ?>
         </div>
 
-        <p><a href="<?php the_permalink(); ?>" class="read-more btn-blue text-center">Read More</a></p>
+        <a href="<?php the_permalink(); ?>" class="read-more btn-blue text-center">Read More</a>
       </div>
     <?php endwhile; ?>
     <?php wp_reset_postdata(); // reset the query ?>

@@ -1,3 +1,7 @@
+body{
+	overflow-x: hidden;
+	font-family: 'Rubik', sans-serif;
+}
 .logo img{
 	width: 190px;
 }
@@ -193,12 +197,14 @@ h1.entry-title a{
 
 .section_title{
 	color: #004a73;
+	font-weight: 700;
+	padding:40px 0;
 }
 
 .form-section-wrapper .form-box{
 	margin-top: 380px;
 	position: relative;
-	padding: 40px 80px;
+	padding: 30px 80px;
 }
 
 .img-back-wrapper,.mobile-app-back{	
@@ -210,7 +216,7 @@ h1.entry-title a{
 }
 
 .imgback_widget_content{
-	width: 400px;
+	width: 440px;
 	margin: 0 auto;
 	padding-top: 200px;
 	text-align: center;
@@ -225,11 +231,11 @@ h1.entry-title a{
 }
 
 .mobileapp_img_wrapper img{
-	margin-top: -180px;
+	margin-top: -140px;
 }
 
 .mobile-app-back{
-	margin-top: 370px;
+	margin-top: 435px;
 }
 .mobile-app-back .text_content{
 	padding-top: 50px;
@@ -272,7 +278,7 @@ input{
 	color: #09547b;
 }
 
-.signup_widget h2 { width:100%; text-align:center; border-bottom: 1px solid #c6e0ec; line-height:0.1em; margin:10px 0 20px; } 
+.signup_widget h2 { width:100%; text-align:center; border-bottom: 1px solid #c6e0ec; line-height:0.1em; margin:40px 0 35px; color:#004a73;} 
 .signup_widget h2 span { background:#fff; padding:0 10px; }
 
 #login_btns_section a.btn-white{
@@ -291,4 +297,8 @@ input{
 .post_title,.post_title:hover{
 	text-decoration: none;
 	color: #23527c;
+}
+
+.success-section-wrapper-wrapper,.blog-section-wrapper{
+	padding-top:50px;
 }
