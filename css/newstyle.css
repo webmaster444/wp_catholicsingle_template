@@ -302,3 +302,12 @@ input{
 .success-section-wrapper-wrapper,.blog-section-wrapper{
 	padding-top:50px;
 }
+
+a{
+	color:#2a7cb5;
+}
+
+.btn{
+	margin-left: 10px;
+	margin-right: 10px;
+}
