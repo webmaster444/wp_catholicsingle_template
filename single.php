@@ -9,7 +9,7 @@
             <a href="/">Home</a> &raquo; <a href="/blog/">Blog</a> &raquo; <?php the_title(); ?>          
           </div>
           <div class="post-categories"><?php echo get_the_category_list();?></div>
-          <br/>
+          <div class="clearfix"></div>
           <h1 class="h1title"><?php the_title(); ?></h1>
 
           <span class="bio-photo" style="margin-right:10px;"><?php the_date(); ?> </span>
