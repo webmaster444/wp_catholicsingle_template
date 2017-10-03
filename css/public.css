@@ -2791,20 +2791,20 @@ body {
 }
 
 /* line 263, ../scss/includes/public_reset.scss */
-a {
+/*a {
   color: blue;
   text-decoration: none;
 }
-
+*/
 /* line 267, ../scss/includes/public_reset.scss */
-a:hover {
+/*a:hover {
   text-decoration: underline;
-}
+}*/
 
 /* line 271, ../scss/includes/public_reset.scss */
-h1 {
+/*h1 {
   padding-top: 20px;
-}
+}*/
 
 /* line 275, ../scss/includes/public_reset.scss */
 .example-block {
@@ -2849,22 +2849,20 @@ div[class*="pull-"] section {
 }
 
 /* line 6, ../scss/includes/public_global.scss */
-body {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+body {  
   font-size: 16px;
   color: #707070;
   font-weight: normal;
 }
 
 /* line 13, ../scss/includes/public_global.scss */
-h1 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 18pt;
+h1 {  
+/*  font-size: 18pt;
   color: #929292;
   font-weight: 300;
   text-align: left;
   border-bottom: 1px solid #929292;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px 0;*/
 }
 /* line 22, ../scss/includes/public_global.scss */
 h1 .heavy, h1.heavy {
@@ -2883,8 +2881,7 @@ h1 a.offset-link {
 }
 
 /* line 37, ../scss/includes/public_global.scss */
-h2 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+h2 {  
   font-size: 20px;
   color: #c93092;
   font-weight: bold;
@@ -2892,8 +2889,7 @@ h2 {
 }
 
 /* line 44, ../scss/includes/public_global.scss */
-h2.alt {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+h2.alt {  
   font-size: 16pt;
   color: #929292;
   font-weight: 300;
@@ -2907,8 +2903,7 @@ h3 {
 }
 
 /* line 57, ../scss/includes/public_global.scss */
-h4 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+h4 {  
   font-size: 16px;
   color: #707070;
   font-weight: bold;
@@ -2921,8 +2916,7 @@ h4 a {
 }
 
 /* line 70, ../scss/includes/public_global.scss */
-h5 {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+h5 {  
   font-size: 16px;
   color: #707070;
   font-weight: 300;
@@ -3002,16 +2996,10 @@ a {
 
 /* FORM ELEMENTS */
 /* line 135, ../scss/includes/public_global.scss */
-input[type="text"], input[type="password"], input[type="email"] {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+input[type="text"], input[type="password"], input[type="email"] {  
   font-size: 16px;
   padding: 4px 5px;
   font-weight: normal;
-}
-
-/* line 141, ../scss/includes/public_global.scss */
-input[type="password"] {
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* line 144, ../scss/includes/public_global.scss */
@@ -3044,8 +3032,7 @@ label {
 }
 
 /* line 165, ../scss/includes/public_global.scss */
-textarea {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+textarea {  
   font-size: 16px;
   font-weight: normal;
   width: 100%;
@@ -3137,8 +3124,7 @@ textarea.full-width {
   display: inline-block;
 }
 /* line 234, ../scss/includes/public_global.scss */
-.styled-select select {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+.styled-select select {  
   font-size: 16px;
   font-weight: normal;
   color: #707070;
@@ -3407,8 +3393,7 @@ p .alert {
 /*.btn, #comments input[type="submit"] {
   color: #ffffff;
   border: 1px solid #e3b00a;
-  cursor: pointer;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  cursor: pointer;  
   font-weight: normal;
   font-size: 14px;
   padding: 8px 14px;
@@ -4016,8 +4001,8 @@ table.alternate-row-colors tbody tr:nth-child(2n) {
   margin-top: 110px;
   margin-bottom: 50px;
   background: #ffffff;
-  border: 2px solid #2880ab;
-  text-align: left;
+  /*border: 2px solid #2880ab;*/
+  text-align: center;
   font-size: 20px;
   font-weight: 300;
   color: #707070;
@@ -4038,8 +4023,8 @@ table.alternate-row-colors tbody tr:nth-child(2n) {
 }
 /* line 722, ../scss/includes/public_global.scss */
 .form-section-wrapper .form-box h1 {
-  color: #707070;
-  margin: 0;
+  /*color: #707070;*/
+  /*margin: 0;*/
 }
 /* line 729, ../scss/includes/public_global.scss */
 /*.form-section-wrapper .search-box {
@@ -4481,7 +4466,7 @@ table.alternate-row-colors tbody tr:nth-child(2n) {
 }
 /* line 1100, ../scss/includes/public_global.scss */
 .success-section-wrapper .story {
-  padding: 30px 0;
+  /*padding: 30px 0;*/
 }
 /* line 1103, ../scss/includes/public_global.scss */
 .success-section-wrapper .story p {
@@ -4527,10 +4512,10 @@ table.alternate-row-colors tbody tr:nth-child(2n) {
 }
 /* line 1145, ../scss/includes/public_global.scss */
 .blog-section-wrapper .post .read-more {
-  font-size: 14px;
-  font-weight: normal;
-  text-decoration: underline;
-  font-style: italic;
+  /*font-size: 14px;*/
+  /*font-weight: normal;*/
+  /*text-decoration: underline;*/
+  /*font-style: italic;*/
 }
 
 /* line 1154, ../scss/includes/public_global.scss */
