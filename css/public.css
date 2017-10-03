@@ -2938,11 +2938,6 @@ p, .default-text {
   font-size: 12px;
 }
 
-/* line 91, ../scss/includes/public_global.scss */
-a {
-  color: #c93092;
-}
-
 /* line 95, ../scss/includes/public_global.scss */
 .highlight {
   background-color: #ffc5ea;
