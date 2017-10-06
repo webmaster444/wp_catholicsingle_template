@@ -10,28 +10,21 @@ body{
 	padding-top: 30px;
 }
 
-.login span{
-	color: #333;
-	margin-right: 15px;
-	font-size: 15px;
-	font-weight: 400;
-}
 .btn.btn-primary, .btn.btn-filled:hover{
 	padding: 10px 40px;
 	border-radius: 32px;
 	background: none;
-	color: #ff0054;
-	border-color: #ff0054;
-	font-weight: 800;
-	font-size: 16px;
+	color: #ED1651;
+	border-color: #ED1651;	
+	font-family: Rubik;	font-size: 16px;	font-weight: 500;	line-height: 16px;
 }
 
 .btn.btn-filled, .btn.btn-primary:hover{
 	padding: 10px 40px;
 	border-radius: 32px;
-	background: #ff0054;
+	background: #ED1651;
 	color: #fff;
-	border-color: #ff0054;
+	border-color: #ED1651;
 	font-weight: 800;
 	font-size: 16px;
 }
@@ -39,15 +32,15 @@ body{
 .btn.btn-blue{
 	padding: 10px 40px;
 	border-radius: 32px;
-	background: #32a1cf;
+	background: #3b5999;
 	color: #fff;
-	border-color: #32a1cf;
+	border-color: #3b5999;
 	font-weight: 800;
 	font-size: 16px;
 }
 input.blueborder{
 	padding: 9px 5px;
-	border: 1px solid #cce0ed;
+	border: 1px solid #a9cae1;
 	border-radius: 18px;
 	width: 48px;
 	text-align: center;
@@ -127,6 +120,11 @@ img.avatar{
 	padding:15px 0;
 }
 
+.snippet-label{
+	box-sizing: border-box;
+	border-right: 1px solid #a9cae1;
+}
+
 .clearfix{
 	float: none;
 	clear: both;
@@ -149,16 +147,13 @@ h1{
 }
 
 .blog-page-title{
-	font-weight: 800;
-	font-size: 2.5em;
-	color: #4d4d4d;
+	color: #4A4A4A;	font-family: Rubik;	font-size: 48px;	font-weight: 500;	line-height: 48px;
 	text-align: center;
 }
 
 h1.entry-title a{
-	font-weight: 800;
-	color: #2a7cb5;
 	text-decoration: none;
+	color: #2B7DB6;	font-family: Rubik;	font-size: 24px;	font-weight: 500;	line-height: 32px;
 }
 
 .post-preview:nth-child(3n+1){
@@ -193,7 +188,9 @@ h1.entry-title a{
 	padding-bottom: 100px;
 }
 .imgback_widget_content h1 em{
-	font-style:normal;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
 }
 .imgback_widget_content h1{
 	font-size: 2.5em;
@@ -219,9 +216,8 @@ h1.entry-title a{
 	position: absolute;
 	top: -170px;
 	right: 50px;
-	color: white;
-	font-weight: 800;
-	font-size: 2.5em;
+	color: white;	
+	font-family: Rubik;	font-size: 48px;	font-weight: 500;	line-height: 28px;
 }
 
 input{
@@ -287,9 +283,9 @@ a{
 }
 
 .latest-slide #content{
-	background: rgba(30,30,30,.4);	
+	background-color: rgba(0,0,0,0.5);
 	min-height: 400px;
-	padding: 40px;
+	padding: 39px;
 }
 
 .latest-slide{
@@ -297,9 +293,7 @@ a{
 }
 
 .latest-slide .post_title{
-	font-weight: 800;
-	font-size: 2em;
-	color: white;
+	color: #FFFFFF;	font-family: Rubik;	font-size: 32px;	font-weight: bold;	line-height: 40px;
 }
 
 /* Using Invision App */
@@ -371,4 +365,19 @@ a{
 	box-sizing: border-box;	
 	padding-left: 25px;
 	color: #FFFFFF;	font-family: Rubik;	font-size: 18px;	font-weight: 500;	line-height: 24px;
+}
+.login span{	
+	margin-right: 15px;
+	color: #4A4A4A;	font-family: Rubik;	font-size: 16px;	line-height: 19px;
+}
+
+.mobile-app-back .text_content h1{
+	font-family: Rubik;	font-size: 32px;	font-weight: 500;	line-height: 28px;
+}
+.mobile-app-back .text_content p{
+	font-family: Rubik;	font-size: 16px;	line-height: 24px;}
+}
+
+.mobile-app-back .text_content a.btn.btn-blue{
+	background-color: #56A0D3;
 }
