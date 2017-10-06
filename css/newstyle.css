@@ -67,15 +67,12 @@ input.blueborder{
 .footer-section-wrapper{
 	background: #003c59;
 	margin-bottom: -30px;
+	padding-top: 50px;
 }
 
 .splitline{
-	padding:10px;
+	padding:15px;
 	border-bottom: 1px solid #fff;
-}
-
-.footerlower.lower-nav{
-	padding:20px 0;
 }
 
 .social-footer span a img{
@@ -113,21 +110,12 @@ img.avatar{
 	float: left;
 }
 
-.h1title{
-	font-weight: 800;
-	font-size: 30px;
-	border: none;
-}
-
-.post-categories li a, .post-categories li a:hover{
-	color: #aaa;
-	text-decoration: none;
-	font-weight: 800;
-	font-size: 18px;
+.post-categories li{
+	margin-left: 15px;
 }
 
 .cblack{
-	color: #aaa;
+	color: #393939;
 }
 
 #content #snippet-box{
@@ -135,18 +123,8 @@ img.avatar{
 	border: none !important;	
 }
 
-#snippet-box .snippet-title{
-	box-sizing: border-box;
-	font-size: 25px;
-}
-
 .snippet-markup{
 	padding:15px 0;
-}
-
-.snippet-label{
-	box-sizing: border-box;
-	border-right: 1px solid #a9cae1;
 }
 
 .clearfix{
@@ -160,14 +138,6 @@ img.avatar{
 	border-bottom: 1px solid #ddd;
 	border-top: 1px solid #ddd;
 	margin:10px 0;
-}
-
-.author-section .bio-photo img{
-	width: 55px;
-}
-
-.author-section .bio-text{
-	padding-left: 10px;
 }
 
 .pagination_section div{
@@ -310,4 +280,95 @@ a{
 .btn{
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+.latest-slide .img_wrapper{
+	min-height: 400px;
+}
+
+.latest-slide #content{
+	background: rgba(30,30,30,.4);	
+	min-height: 400px;
+	padding: 40px;
+}
+
+.latest-slide{
+	margin-bottom: 40px;
+}
+
+.latest-slide .post_title{
+	font-weight: 800;
+	font-size: 2em;
+	color: white;
+}
+
+/* Using Invision App */
+.breadcrumbs{
+	
+	font-family: Rubik;	
+	font-size: 14px;		
+	line-height: 17px;
+}
+
+.breadcrumbs a{
+	color: #2B7DB6;	
+	font-weight: 500;	
+}
+
+.post-categories li a, .post-categories li a:hover{	
+	text-decoration: none;		
+	color: #4A4A4A;	
+	font-family: Rubik;	
+	font-size: 14px;	
+	font-weight: bold;	
+	line-height: 17px;
+}
+
+.h1title{
+	color: #4A4A4A;	
+	font-family: Rubik;	
+	font-size: 48px;	
+	font-weight: bold;	
+	line-height: 56px;
+}
+
+.bio-info span{
+	color: #4A4A4A;	
+	font-family: Rubik;	
+	font-size: 16px;	
+	line-height: 32px;
+}
+
+.snippet-markup .snippet-data{
+	color: #4A4A4A;	font-family: Rubik;	font-size: 18px;	line-height: 40px;
+}
+.snippet-markup .snippet-label{
+	color: #4A4A4A;	font-family: Rubik;	font-size: 18px;	font-weight: 500;	line-height: 40px;
+}
+
+.small-post-categories li a, .small-post-categories li a:hover{
+	color: #4A4A4A;	font-family: Rubik;	font-size: 14px;	font-weight: 300;	line-height: 16px;
+}
+
+.author-section .bio-photo img{
+	width: 64px;
+}
+
+.author-section .bio-text{
+	padding-left: 10px;
+	color: #4A4A4A;	font-family: Rubik;	font-size: 16px;	line-height: 24px;
+}
+
+.footer-section-wrapper .upper-nav a{
+	color: #FFFFFF;	font-family: Rubik;	font-size: 15px;	line-height: 32px;
+}
+
+.footerlower.lower-nav{
+	color: #FFFFFF;	font-family: "Proxima Nova";	font-size: 15px;	line-height: 15px;
+}
+
+#snippet-box .snippet-title{
+	box-sizing: border-box;	
+	padding-left: 25px;
+	color: #FFFFFF;	font-family: Rubik;	font-size: 18px;	font-weight: 500;	line-height: 24px;
 }
