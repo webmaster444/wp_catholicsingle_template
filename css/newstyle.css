@@ -73,7 +73,7 @@ input.blueborder{
 }
 
 .header-boxshadow{
-	border-bottom: 2px solid #cce0ed;
+	/*border-bottom: 2px solid #cce0ed;*/
 }
 
 @media screen and (min-width: 1400px){
