@@ -17,7 +17,7 @@
         <?php endif; ?>
 
         <div class="grid-70 tablet-grid-50">
-          <h2><?php the_title(); ?></h2>
+          <h2 class="text-center"><?php the_title(); ?></h2>
           <?php the_content(); ?>
         </div>
 
