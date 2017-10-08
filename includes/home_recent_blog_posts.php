@@ -9,9 +9,7 @@
         <?php if (has_post_thumbnail()){ ?>
           <img src="<?php the_post_thumbnail_url('large');?>" width="100%" />
         <?php } ?>
-        <h2><a class="post_title" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-
-        <div class="byline">by <span class="author"><?php the_author(); ?></span> on <span class="date"><?php echo get_the_date('F j, Y'); ?> </span></div>
+        <h2><a class="post_title" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>        
 
         <div class="post">
           <p><?php print the_excerpt(); ?>
