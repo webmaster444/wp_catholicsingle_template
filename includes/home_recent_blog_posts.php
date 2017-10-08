@@ -12,7 +12,7 @@
         <h2><a class="post_title" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>        
 
         <div class="post">
-          <p><?php print the_excerpt(); ?>
+          <p><?php print the_excerpt(); ?></p>
         </div>
 
         <a href="<?php the_permalink(); ?>" class="read-more btn-blue text-center">Read More</a>
