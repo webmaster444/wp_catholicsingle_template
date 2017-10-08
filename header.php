@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <div class="header-boxshadow"> </div>
+    <!-- <div class="header-boxshadow"> </div> -->
   </div>
   <!-- End Header -->
   <?php //wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
