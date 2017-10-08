@@ -383,4 +383,9 @@ a{
 }
 .full-width{
 	max-width: 1490px;
+	width: 100vw;
+	position: relative;
+	margin-left: -50vw;	
+	margin-top: 100px;
+	left: 50%;
 }
