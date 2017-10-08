@@ -354,7 +354,7 @@ a{
 }
 
 .footer-section-wrapper .upper-nav a{
-	color: #FFFFFF;	font-family: Rubik;	font-size: 15px;	line-height: 32px;
+	color: #FFFFFF;	font-family: Rubik;	font-size: 15px;	line-height: 32px;font-weight: 500;
 }
 
 .footerlower.lower-nav{
