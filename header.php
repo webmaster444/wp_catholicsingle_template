@@ -4,6 +4,8 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Rubik:500,500i" rel="stylesheet"> 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
