@@ -9,15 +9,16 @@
         <?php if (has_post_thumbnail()){ ?>
           <img src="<?php the_post_thumbnail_url('large');?>" width="100%" />
         <?php } ?>
-        <h2><a class="post_title" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>        
-
+        <h2 class="text-center"><a class="post_title" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+        
         <div class="post">
-          <p><?php print the_excerpt(); ?></p>
+          <p><?php print the_excerpt(); ?>
         </div>
 
-        <a href="<?php the_permalink(); ?>" class="read-more btn-blue text-center">Read More</a>
+        <a href="<?php the_permalink(); ?>" class="read-more btn btn-light-blue text-center">Read More</a>
       </div>
     <?php endwhile; ?>
     <?php wp_reset_postdata(); // reset the query ?>
+    <div class="clearfix"> </div>
   </div>
 </div>
