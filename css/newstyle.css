@@ -16,7 +16,7 @@ body{
 	background: none;
 	color: #ED1651;
 	border-color: #ED1651;	
-	font-family: Rubik;	font-size: 16px;	font-weight: 500;	line-height: 16px;
+	font-family: Rubik;	font-size: 16px;	font-weight: 500;
 }
 
 .btn.btn-filled, .btn.btn-primary:hover{
@@ -24,8 +24,7 @@ body{
 	border-radius: 32px;
 	background: #ED1651;
 	color: #fff;
-	border-color: #ED1651;
-	font-weight: 800;
+	border-color: #ED1651;	
 	font-size: 16px;
 }
 
@@ -34,8 +33,7 @@ body{
 	border-radius: 32px;
 	background: #3b5999;
 	color: #fff;
-	border-color: #3b5999;
-	font-weight: 800;
+	border-color: #3b5999;	
 	font-size: 16px;
 }
 input.blueborder{
@@ -65,7 +63,7 @@ input.blueborder{
 
 .splitline{
 	padding:15px;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid rgba(255,255,255,0.36);
 }
 
 .social-footer span a img{
@@ -73,14 +71,14 @@ input.blueborder{
 }
 
 .header-boxshadow{
-	/*border-bottom: 2px solid #cce0ed;*/
+	border-bottom: 2px solid #cce0ed;
 }
 
 @media screen and (min-width: 1400px){
-	/*.header-boxshadow{*/
-		/*width:80%;*/
-		/*margin-left: 10%;*/
-	/*}*/
+	.header-boxshadow{
+		width:80%;
+		margin-left: 10%;
+	}
 }
 
 @media screen and (max-width:1400px){
@@ -162,7 +160,7 @@ h1.entry-title a{
 
 .section_title{
 	color: #004a73;
-	font-weight: 700;
+	font-weight: 500;
 	padding:40px 0;
 }
 
@@ -172,7 +170,7 @@ h1.entry-title a{
 	padding: 30px 80px;
 }
 
-.img-back-wrapper,.mobile-app-back{	
+.mobile-app-back{	
 	width: 100vw;
 	position: relative;
 	margin-left: -50vw;	
@@ -195,6 +193,7 @@ h1.entry-title a{
 .imgback_widget_content h1{
 	font-size: 2.5em;
 	color: white;
+	font-weight: 400;
 }
 
 .mobileapp_img_wrapper img{
@@ -214,7 +213,7 @@ h1.entry-title a{
 
 .form-section-wrapper .form-box h1.tag_line{
 	position: absolute;
-	top: -170px;
+	top: -130px;
 	right: 50px;
 	color: white;	
 	font-family: Rubik;	font-size: 48px;	font-weight: 500;	line-height: 28px;
@@ -224,7 +223,7 @@ input{
 	box-shadow: none;
 }
 
-.signup_widget input{
+#signup_widget input{
 	box-shadow: none;
 	border:none;
 	border-bottom: 2px solid #09547b;
@@ -244,18 +243,21 @@ input{
 	color: #09547b;
 }
 
-.signup_widget h2 { width:100%; text-align:center; border-bottom: 1px solid #c6e0ec; line-height:0.1em; margin:40px 0 35px; color:#004a73;} 
-.signup_widget h2 span { background:#fff; padding:0 10px; }
+#signup_widget h2.split { width:100%; text-align:center; border-bottom: 1px solid #c6e0ec; line-height:0.1em; margin:40px 0 35px; color:#004a73;font-weight: 500;font-size: 16px;} 
+#signup_widget h2 span { background:#fff; padding:0 10px; }
 
 #login_btns_section a.btn-white{
 	border: 1px solid #aaa;
-	color: #aaa;
-	font-weight: 800;
-	font-size: 16px;
+	color: #666;
+	font-weight: 500;
+	font-size: 14px;
 	border-radius: 32px;
 	padding: 10px 40px;
 }
 
+#login_btns_section a img{
+	margin-right: 20px;
+}
 .text-center{
 	text-align: center;
 }
@@ -354,7 +356,7 @@ a{
 }
 
 .footer-section-wrapper .upper-nav a{
-	color: #FFFFFF;	font-family: Rubik;	font-size: 15px;	line-height: 32px;font-weight: 500;
+	color: #FFFFFF;	font-family: Rubik;	font-size: 15px;	line-height: 32px;
 }
 
 .footerlower.lower-nav{
@@ -375,17 +377,95 @@ a{
 	font-family: Rubik;	font-size: 32px;	font-weight: 500;	line-height: 28px;
 }
 .mobile-app-back .text_content p{
-	font-family: Rubik;	font-size: 16px;	line-height: 24px;}
+	font-family: Rubik;	font-size: 16px;	line-height: 24px;
 }
 
 .mobile-app-back .text_content a.btn.btn-blue{
 	background-color: #56A0D3;
 }
-.full-width{
+
+.blueBack{
+	background: linear-gradient(90deg, #56A0D3 0%, #043E62 100%);
+}
+
+.fluid_width{
+	width: 100%;
 	max-width: 1490px;
-	width: 100vw;
-	position: relative;
-	margin-left: -50vw;	
-	margin-top: 100px;
-	left: 50%;
+	margin: 0 auto;
+}
+
+.story img{
+	width: 100%;
+	height: 170px;
+}
+
+.blog-section-wrapper .post img{
+	height: 170px;
+}
+
+.story div{
+	box-shadow: 0px 0px 3px 3px #eee;
+}
+
+.blog-section-wrapper .post h2{
+	margin:17px 0;
+}
+
+.blog-section-wrapper .post h2 a.post_title, .success-section-wrapper h2 a.post_title{
+	color: #2B7DB6;	font-family: Rubik;	font-size: 20px;	font-weight: 500;	line-height: 24px;	text-align: center;
+}
+
+a.btn.btn-light-blue{
+	border-radius: 44px;	background-color: #56A0D3;
+	color: #FFFFFF;	font-family: Rubik;	font-size: 16px; text-align: center;
+	padding: 10px 30px;
+}
+
+#menu-footer-menu-1 li::after, #menu-footer-menu-2 li::after, #menu-footer-menu-3 li::after, #menu-footer-menu-4 li::after{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.blog-section-wrapper .post p{
+	color: #4A4A4A;
+	font-family: Rubik;
+	font-size: 15px;
+	line-height: 24px;
+}
+.success-section-wrapper h2{
+	margin-top: 20px;
+}
+
+#signup_widget input{
+	width: 100%;
+	color: #2B7DB6;	font-family: Rubik;	font-size: 18px;	line-height: 24px;
+}
+
+#signup_widget{
+	color: #004B79;	font-family: Rubik;	
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.mail-signup-btn a{
+	width: 100%;
+	margin: 0;
+}
+
+#signup_widget label{
+	color: #2B7DB6;	font-family: Rubik;	font-size: 18px;	line-height: 24px;
+}
+
+#signup_widget .dropdown-toggle{
+	color: #2B7DB6;	font-family: Rubik;	font-size: 18px;	line-height: 24px;	
+}
+
+#signup_widget .widget_title{
+	color: #004B79;	font-family: Rubik;	font-size: 22px;	font-weight: 500;	line-height: 28px;	text-align: center;
 }
