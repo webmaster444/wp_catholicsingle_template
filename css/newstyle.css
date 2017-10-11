@@ -288,7 +288,7 @@ a{
 .latest-slide #content{
 	background-color: rgba(0,0,0,0.5);
 	min-height: 400px;
-	padding: 39px;
+	padding: 36px;
 }
 
 .latest-slide{
@@ -540,4 +540,11 @@ padding: 8px 30px;
 	font-family: rubik;
 	font-size: 16px;
 	line-height: 24px;
+}
+
+.headerline{
+	border: 1px solid #A9CAE1;
+	max-width: 1490px;
+	width: 100%;
+	margin: 0 auto;
 }

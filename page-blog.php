@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="headerline"></div>
 <?php
   $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
   query_posts( array( 'posts_per_page' => 15, 'post_status' => 'publish', 'paged' => $paged ) );
@@ -26,7 +26,7 @@
   <div class="img_wrapper" style="background:url('<?php echo $backimgsrc;?>') no-repeat;background-size: cover;">
   <div class='grid-40 tablet-grid-40 prefix-60' id="content">
     <h4 class="cwhite post_title"><?php echo $post1[0]['post_title'];?></h4>
-    <span class="cwhite pull-left" style="margin-right: 5px;font-weight: 500;"><?php echo get_the_date('F j, Y', $postId);?></span>
+    <span class="cwhite pull-left" style="margin-right: 5px;font-weight: 500;"><?php echo get_the_date('M j, Y', $postId);?></span>
     <span class="cwhite pull-left">By <?php $authorId = $post1[0]['post_author']; echo get_the_author_meta( 'display_name', $authorId ); ?></span><br/><br/>
     <p class="cwhite"><?php echo get_the_excerpt($postId); ?></p>
   </div>
@@ -43,7 +43,7 @@
           <?php } ?>
           <h1 class="entry-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>          
         </div>
-        <span class="bio-photo" style="margin-right:10px;"><?php echo get_the_date('F j, Y'); ?> </span>
+        <span class="bio-photo" style="margin-right:10px;font-weight: 500"><?php echo get_the_date('M j, Y'); ?> </span>
         <span class="cblack">by <?php echo get_author_name(); ?></span>
         <?php the_excerpt(); ?>        
       </div>
