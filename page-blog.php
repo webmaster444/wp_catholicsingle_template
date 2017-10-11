@@ -26,7 +26,7 @@
   <div class="img_wrapper" style="background:url('<?php echo $backimgsrc;?>') no-repeat;background-size: cover;">
   <div class='grid-40 tablet-grid-40 prefix-60' id="content">
     <h4 class="cwhite post_title"><?php echo $post1[0]['post_title'];?></h4>
-    <span class="cwhite pull-left" style="margin-right: 5px;font-weight: 700;"><?php echo get_the_date('F j, Y', $postId);?></span>
+    <span class="cwhite pull-left" style="margin-right: 5px;font-weight: 500;"><?php echo get_the_date('F j, Y', $postId);?></span>
     <span class="cwhite pull-left">By <?php $authorId = $post1[0]['post_author']; echo get_the_author_meta( 'display_name', $authorId ); ?></span><br/><br/>
     <p class="cwhite"><?php echo get_the_excerpt($postId); ?></p>
   </div>
@@ -38,7 +38,8 @@
       <div class="post-preview grid-33">
         <div class="grid-100">
           <?php if (has_post_thumbnail()){ ?>
-            <img src="<?php the_post_thumbnail_url('large');?>" width="100%" />
+            <div style="background-image:url(<?php the_post_thumbnail_url('large');?>)" class="blog_post_img_back">
+          </div>
           <?php } ?>
           <h1 class="entry-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>          
         </div>
