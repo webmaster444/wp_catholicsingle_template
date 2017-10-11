@@ -241,3 +241,6 @@ function test_theme_settings(){
   register_setting( 'theme-options-grp', 'first_field_option');
 }
 add_action('admin_init','test_theme_settings');
+
+function custom_excerpt_length( $length ) { return 50; } 
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 ); 
