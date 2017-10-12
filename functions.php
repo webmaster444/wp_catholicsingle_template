@@ -25,6 +25,7 @@ function catholicsingles_load_scripts()
   wp_enqueue_style('newstyle', get_template_directory_uri() . '/css/newstyle.css', false, filemtime(get_stylesheet_directory() . '/css/newstyle.css'));
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script( 'bootstrap', "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js");
+  wp_enqueue_script( 'cookie', get_template_directory_uri().'/js/custom.js', array());
   wp_enqueue_script( 'cookie', get_template_directory_uri().'/js/js.cookie.js', array());
   wp_enqueue_script( 'utm_cookies', get_template_directory_uri().'/js/utm_cookies.js', array());
 }
@@ -165,7 +166,7 @@ add_filter('next_posts_link_attributes', 'posts_link_attributes');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes');
 
 function posts_link_attributes() {
-    return 'class="btn btn-filled"';
+    return 'class="btn btn-filled" id="next_btn"';
 }
 
 function home_recent_success_stories_func() {
@@ -242,5 +243,5 @@ function test_theme_settings(){
 }
 add_action('admin_init','test_theme_settings');
 
-function custom_excerpt_length( $length ) { return 50; } 
+function custom_excerpt_length( $length ) { return 30; } 
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 ); 
