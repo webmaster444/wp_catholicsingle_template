@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="headerline"></div>
 <section id="content" role="main">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <div class="grid-container spacer-top blog-page">
