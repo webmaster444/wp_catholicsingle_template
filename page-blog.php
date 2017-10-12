@@ -21,37 +21,39 @@
     else { _e( 'CatholicSingles.com Blog', 'catholicsingles' ); }
     ?></h1>
   </div>  
+  <?php echo wp_list_categories(); ?>
   <div class="grid-100 tablet-grid-100">
   <div class="latest-slide">
   <div class="img_wrapper" style="background:url('<?php echo $backimgsrc;?>') no-repeat;background-size: cover;">
   <div class='grid-40 tablet-grid-40 prefix-60' id="content">
-    <h4 class="cwhite post_title"><?php echo $post1[0]['post_title'];?></h4>
-    <span class="cwhite pull-left" style="margin-right: 5px;font-weight: 500;"><?php echo get_the_date('M j, Y', $postId);?></span>
-    <span class="cwhite pull-left">By <?php $authorId = $post1[0]['post_author']; echo get_the_author_meta( 'display_name', $authorId ); ?></span><br/><br/>
-    <p class="cwhite"><?php echo get_the_excerpt($postId); ?></p>
+    <a href="<?php echo $post1[0]['guid']; ?>"><h4 class="cwhite post_title"><?php echo $post1[0]['post_title'];?></h4></a>
+    <span class="cwhite pull-left" style="margin-right: 5px;font-weight: 500;font-size: 18px;"><?php echo get_the_date('M j, Y', $postId);?></span> &nbsp;&nbsp;&nbsp;
+    <span class="cwhite pull-left" style="font-size: 18px;">By <?php $authorId = $post1[0]['post_author']; echo get_the_author_meta( 'display_name', $authorId ); ?></span><br/><br/>
+    <p class="cwhite" style="font-weight: 300"><?php echo get_the_excerpt($postId); ?></p>
   </div>
   </div>
   </div>
   </div>
-  <div class="grid-100 tablet-grid-100">
+  <div id="posts_section">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="post-preview grid-33">
-        <div class="grid-100">
+        <div class="">
           <?php if (has_post_thumbnail()){ ?>
             <div style="background-image:url(<?php the_post_thumbnail_url('large');?>)" class="blog_post_img_back">
           </div>
           <?php } ?>
           <h1 class="entry-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>          
-        </div>
+        
         <span class="bio-photo" style="margin-right:10px;font-weight: 500"><?php echo get_the_date('M j, Y'); ?> </span>
         <span class="cblack">by <?php echo get_author_name(); ?></span>
         <?php the_excerpt(); ?>        
+        </div>
       </div>
     <?php endwhile; endif; ?>
     <div class="clearfix"> </div>
     <div class="aligncenter pagination_section">
       <div class=""><?php previous_posts_link( 'Previous' ); ?></div>
-      <div class=""><input type="text" class="blueborder" value="<?php echo $paged; ?>" /> <?php echo " of " .$pagecnt;?></div>
+      <div class="page_number_section"><input type="text" class="blueborder" value="<?php echo $paged; ?>" /> <?php echo " of " .$pagecnt;?></div>
       <div class=""><?php next_posts_link( 'Next' ); ?></div>
     </div>
   </div>
